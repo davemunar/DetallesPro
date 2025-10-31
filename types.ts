@@ -7,7 +7,7 @@ export interface Product {
   name: string;
   description: string;
   price: number;
-  imageUrl: string;
+  imageUrls: string[];
   category: string; // Could be a more specific type if needed
   priceCategory: PriceCategory;
   kitType: KitType;

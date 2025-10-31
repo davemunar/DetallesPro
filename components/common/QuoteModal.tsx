@@ -87,7 +87,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose, quoteItems, on
                     {quoteItems.map(item => (
                       <li key={item.id} className="flex items-center justify-between bg-gray-50 p-3 rounded-lg">
                         <div className="flex items-center flex-grow">
-                          <img src={item.imageUrl} alt={item.name} className="w-16 h-16 rounded-md object-cover mr-4" />
+                          <img src={item.imageUrls[0]} alt={item.name} className="w-16 h-16 rounded-md object-cover mr-4" />
                           <div className="flex-grow">
                             <h4 className="font-semibold text-gray-800">{item.name}</h4>
                             <p className="text-gray-500 text-sm">${item.price.toLocaleString('es-CO')}</p>
